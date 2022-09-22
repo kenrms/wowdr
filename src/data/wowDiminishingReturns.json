@@ -1,0 +1,758 @@
+
+[
+  {
+      "class": "Death Knight",
+      "spell": "Asphyxiate",
+      "spellId": 221562,
+      "drSchool": "Stun",
+      "source": "Talent"
+  },
+  {
+      "class": "Death Knight",
+      "spell": "Blinding Sleet",
+      "spellId": 207167,
+      "drSchool": "Disorient",
+      "source": "Talent"
+  },
+  {
+      "class": "Death Knight",
+      "spell": "Chains of Ice",
+      "spellId": 45524,
+      "drSchool": "Root",
+      "source": "PvP Talent",
+      "note": "https://www.wowhead.com/spell=204080/deathchill"
+  },
+  {
+      "class": "Death Knight",
+      "spell": "Frostwyrm's Fury",
+      "spellId": 279302,
+      "drSchool": "Stun",
+      "source": "Legendary",
+      "note": "https://www.wowhead.com/spell=334692/absolute-zero"
+  },
+  {
+      "class": "Death Knight",
+      "spell": "Gnaw",
+      "spellId": 47481,
+      "drSchool": "Stun",
+      "source": "Pet",
+      "note": "From unbuffed Unholy pet"
+  },
+  {
+      "class": "Death Knight",
+      "spell": "Gorefiend's Grasp",
+      "spellId": 108199,
+      "drSchool": "Knockback",
+      "source": "Talent",
+      "note": "[Blood only] should only trigger DR if you are not the target and get gripped"
+  },
+  {
+      "class": "Death Knight",
+      "spell": "Remorseless Winter",
+      "spellId": 196770,
+      "drSchool": "Stun",
+      "source": "PvP Talent",
+      "note": "https://www.wowhead.com/spell=287250/dead-of-winter"
+  },
+  {
+      "class": "Death Knight",
+      "spell": "Shambling Rush",
+      "drSchool": "Root",
+      "source": "Pet",
+      "note": "From buffed Unholy pet (replaces Gnaw)"
+  },
+  {
+      "class": "Death Knight",
+      "spell": "Strangulate",
+      "spellId": 47476,
+      "drSchool": "Silence",
+      "source": "PvP Talent"
+  },
+  {
+      "class": "Demon Hunter",
+      "spell": "Fel Eruption",
+      "drSchool": "Stun",
+      "source": "Baseline",
+      "note": "Havoc only"
+  },
+  {
+      "class": "Demon Hunter",
+      "spell": "Fel Nova",
+      "drSchool": "Stun",
+      "source": "Baseline",
+      "note": "Havoc only"
+  },
+  {
+      "class": "Demon Hunter",
+      "spell": "Imprison",
+      "drSchool": "Incapacitate",
+      "source": "Baseline"
+  },
+  {
+      "class": "Demon Hunter",
+      "spell": "The Hunt",
+      "drSchool": "Root",
+      "source": "Covenant"
+  },
+  {
+      "class": "Demon Hunter",
+      "spell": "Sigil of Misery",
+      "drSchool": "Disorient",
+      "source": "Baseline",
+      "note": "Vengeance only"
+  },
+  {
+      "class": "Demon Hunter",
+      "spell": "Illidan's Grasp",
+      "drSchool": "Stun",
+      "source": "PvP Talent",
+      "note": "Vengeance only"
+  },
+  {
+      "class": "Demon Hunter",
+      "spell": "Sigil of Silence",
+      "drSchool": "Silence",
+      "source": "Baseline",
+      "note": "Vengeance only"
+  },
+  {
+      "class": "Druid",
+      "spell": "Cyclone",
+      "drSchool": "Disorient",
+      "source": "Baseline"
+  },
+  {
+      "class": "Druid",
+      "spell": "Entangling Roots",
+      "drSchool": "Root",
+      "source": "Baseline"
+  },
+  {
+      "class": "Druid",
+      "spell": "Mass Entanglement",
+      "drSchool": "Root",
+      "source": "Talent"
+  },
+  {
+      "class": "Druid",
+      "spell": "Nature's Grasp",
+      "drSchool": "Root",
+      "source": "PvP Talent"
+  },
+  {
+      "class": "Druid",
+      "spell": "Wild Charge",
+      "drSchool": "Root",
+      "source": "Talent",
+      "note": "When used in bear form"
+  },
+  {
+      "class": "Druid",
+      "spell": "Incapacitating Roar",
+      "drSchool": "Incapacitate",
+      "source": "Baseline",
+      "note": "Guardian affinity"
+  },
+  {
+      "class": "Druid",
+      "spell": "Hibernate",
+      "drSchool": "Incapacitate",
+      "source": "Baseline"
+  },
+  {
+      "class": "Druid",
+      "spell": "Maim",
+      "drSchool": "Stun",
+      "source": "Baseline",
+      "note": "Feral affinity"
+  },
+  {
+      "class": "Druid",
+      "spell": "Mighty bash",
+      "drSchool": "Stun",
+      "source": "Talent"
+  },
+  {
+      "class": "Druid",
+      "spell": "Rake",
+      "drSchool": "Stun",
+      "source": "Baseline",
+      "note": "Feral affinity; when used from stealth"
+  },
+  {
+      "class": "Druid",
+      "spell": "Overrun",
+      "drSchool": "Stun",
+      "source": "PvP Talent",
+      "note": "Guardian only, main target"
+  },
+  {
+      "class": "Druid",
+      "spell": "Solar Beam",
+      "drSchool": "Silence",
+      "source": "Baseline",
+      "note": "Balance only"
+  },
+  {
+      "class": "Druid",
+      "spell": "Typhoon",
+      "drSchool": "Knockback",
+      "source": "Baseline",
+      "note": "Balance affinity"
+  },
+  {
+      "class": "Druid",
+      "spell": "Overrun",
+      "drSchool": "Knockback",
+      "source": "PvP Talent",
+      "note": "Guardian only; enemies near main target"
+  },
+  {
+      "class": "Druid",
+      "spell": "Faerie Swarm",
+      "drSchool": "Disarm",
+      "source": "PvP Talent",
+      "note": "Balance only"
+  },
+  {
+      "class": "Hunter",
+      "spell": "Freezing Trap",
+      "drSchool": "Incapacitate",
+      "source": "Baseline"
+  },
+  {
+      "class": "Hunter",
+      "spell": "Harpoon",
+      "drSchool": "Root",
+      "source": "Baseline",
+      "note": "Survival only"
+  },
+  {
+      "class": "Hunter",
+      "spell": "Steel Trap",
+      "drSchool": "Root",
+      "source": "Talent",
+      "note": "Survival only"
+  },
+  {
+      "class": "Hunter",
+      "spell": "Tracker's Net",
+      "drSchool": "Root",
+      "source": "PvP Talent",
+      "note": "Survival only"
+  },
+  {
+      "class": "Hunter",
+      "spell": "Binding Shot",
+      "drSchool": "Root",
+      "source": "Talent"
+  },
+  {
+      "class": "Hunter",
+      "spell": "Charge",
+      "drSchool": "Root",
+      "source": "Pet"
+  },
+  {
+      "class": "Hunter",
+      "spell": "Scatter Shot",
+      "drSchool": "Incapacitate",
+      "source": "PvP Talent",
+      "note": "Marksmanship only"
+  },
+  {
+      "class": "Hunter",
+      "spell": "Scare Beast",
+      "drSchool": "Disorient",
+      "source": "Baseline"
+  },
+  {
+      "class": "Hunter",
+      "spell": "Intimidation",
+      "drSchool": "Stun",
+      "source": "Pet",
+      "note": "Beast Master + Survival only"
+  },
+  {
+      "class": "Hunter",
+      "spell": "Spider Sting",
+      "drSchool": "Silence",
+      "source": "PvP Talent"
+  },
+  {
+      "class": "Hunter",
+      "spell": "Hi-Explosive Trap",
+      "drSchool": "Knockback",
+      "source": "PvP Talent"
+  },
+  {
+      "class": "Hunter",
+      "spell": "Bursting Shot",
+      "drSchool": "Knockback",
+      "source": "Baseline",
+      "note": "Marksmanship only"
+  },
+  {
+      "class": "Mage",
+      "spell": "Polymorph",
+      "drSchool": "Incapacitate",
+      "source": "Baseline"
+  },
+  {
+      "class": "Mage",
+      "spell": "Freeze",
+      "drSchool": "Root",
+      "source": "Pet",
+      "note": "Frost only"
+  },
+  {
+      "class": "Mage",
+      "spell": "Frost Nova",
+      "drSchool": "Root",
+      "source": "Baseline"
+  },
+  {
+      "class": "Mage",
+      "spell": "Frostbite",
+      "drSchool": "Root",
+      "source": "PvP Talent",
+      "note": "Frost only"
+  },
+  {
+      "class": "Mage",
+      "spell": "Glacial Spike",
+      "drSchool": "Root",
+      "source": "Talent",
+      "note": "Frost only"
+  },
+  {
+      "class": "Mage",
+      "spell": "Ice Nova",
+      "drSchool": "Root",
+      "source": "Talent",
+      "note": "Frost only"
+  },
+  {
+      "class": "Mage",
+      "spell": "Ring of Frost",
+      "drSchool": "Incapacitate",
+      "source": "Talent"
+  },
+  {
+      "class": "Mage",
+      "spell": "Dragon's Breath",
+      "drSchool": "Disorient",
+      "source": "Baseline",
+      "note": "Fire only"
+  },
+  {
+      "class": "Mage",
+      "spell": "Blast Wave",
+      "drSchool": "Knockback",
+      "source": "Talent",
+      "note": "Fire only"
+  },
+  {
+      "class": "Monk",
+      "spell": "Leg Sweep",
+      "drSchool": "Stun",
+      "source": "Baseline"
+  },
+  {
+      "class": "Monk",
+      "spell": "Paralysis",
+      "drSchool": "Incapacitate",
+      "source": "Baseline"
+  },
+  {
+      "class": "Monk",
+      "spell": "Song of Chi-ji",
+      "drSchool": "Disorient",
+      "source": "Talent"
+  },
+  {
+      "class": "Monk",
+      "spell": "Ring of Peace",
+      "drSchool": "Knockback",
+      "source": "Talent"
+  },
+  {
+      "class": "Monk",
+      "spell": "Breath of Fire",
+      "drSchool": "Disorient",
+      "source": "PvP Talent",
+      "note": "Brewmaster only; with Incendiary Breath PvP Talent (https://www.wowhead.com/spell=202272/incendiary-breath)"
+  },
+  {
+      "class": "Monk",
+      "spell": "Disable",
+      "drSchool": "Root",
+      "source": "Baseline",
+      "note": "Windwalker only; when used twice on the same target"
+  },
+  {
+      "class": "Monk",
+      "spell": "Clash",
+      "drSchool": "Root",
+      "source": "Baseline",
+      "note": "Brewmaster only"
+  },
+  {
+      "class": "Monk",
+      "spell": "Keg Smash",
+      "drSchool": "Stun",
+      "source": "PvP Talent",
+      "note": "Brewmaster only; with Double Barrel PvP Talent (https://www.wowhead.com/spell=202335/double-barrel)"
+  },
+  {
+      "class": "Monk",
+      "spell": "Mighty Ox Kick",
+      "drSchool": "Knockback",
+      "source": "PvP Talent",
+      "note": "Brewmaster only"
+  },
+  {
+      "class": "Monk",
+      "spell": "Grapple Weapon",
+      "drSchool": "Disarm",
+      "source": "PvP Talent"
+  },
+  {
+      "class": "Paladin",
+      "spell": "Hammer of Justice",
+      "drSchool": "Stun",
+      "source": "Baseline"
+  },
+  {
+      "class": "Paladin",
+      "spell": "Repentance",
+      "drSchool": "Incapacitate",
+      "source": "Talent"
+  },
+  {
+      "class": "Paladin",
+      "spell": "Blinding Light",
+      "drSchool": "Disorient",
+      "source": "Talent"
+  },
+  {
+      "class": "Paladin",
+      "spell": "Turn Evil",
+      "drSchool": "Disorient",
+      "source": "Baseline"
+  },
+  {
+      "class": "Paladin",
+      "spell": "Avenger's Shield",
+      "drSchool": "Silence",
+      "source": "PvP Talent",
+      "note": "Protection only; when used with Shield of Virtue PvP Talent (https://www.wowhead.com/spell=215652/shield-of-virtue)"
+  },
+  {
+      "class": "Paladin",
+      "spell": "Wake of Ashed",
+      "drSchool": "Stun",
+      "source": "Baseline",
+      "note": "Retribution only; when used on Undead or Demon targets"
+  },
+  {
+      "class": "Priest",
+      "spell": "Mind Bomb",
+      "drSchool": "Disorient",
+      "source": "Talent",
+      "note": "Shadow Only, replaces Psychic Scream"
+  },
+  {
+      "class": "Priest",
+      "spell": "Mind Control",
+      "drSchool": "Disorient",
+      "source": "Baseline"
+  },
+  {
+      "class": "Priest",
+      "spell": "Psychic Scream",
+      "drSchool": "Disorient",
+      "source": "Baseline",
+      "note": "Talent reduces cooldown"
+  },
+  {
+      "class": "Priest",
+      "spell": "Shackle Undead",
+      "drSchool": "Incapacitate",
+      "source": "Baseline",
+      "note": "Usable on undead targets only"
+  },
+  {
+      "class": "Priest",
+      "spell": "Shining Force",
+      "drSchool": "Knockback",
+      "source": "Talent",
+      "note": "Holy, Disc Only"
+  },
+  {
+      "class": "Priest",
+      "spell": "Silence",
+      "drSchool": "Silence",
+      "source": "Baseline",
+      "note": "Shadow Only, talent reduces cooldown"
+  },
+  {
+      "class": "Priest",
+      "spell": "Chastise",
+      "drSchool": "Stun",
+      "source": "Talent",
+      "note": "Holy Only; when used with Censure talent (https://www.wowhead.com/spell=200199/censure)"
+  },
+  {
+      "class": "Priest",
+      "spell": "Psychic Horror",
+      "drSchool": "Stun",
+      "source": "Talent",
+      "note": "Shadow Only"
+  },
+  {
+      "class": "Priest",
+      "spell": "Chastise",
+      "drSchool": "Incapacitate",
+      "source": "Baseline",
+      "note": "Holy Only"
+  },
+  {
+      "class": "Rogue",
+      "spell": "Dismantle",
+      "drSchool": "Disarm",
+      "source": "PvP Talent"
+  },
+  {
+      "class": "Rogue",
+      "spell": "Blind",
+      "drSchool": "Disorient",
+      "source": "Baseline"
+  },
+  {
+      "class": "Rogue",
+      "spell": "Gouge",
+      "drSchool": "Incapacitate",
+      "source": "Baseline",
+      "note": "Outlaw only"
+  },
+  {
+      "class": "Rogue",
+      "spell": "Sap",
+      "drSchool": "Incapacitate",
+      "source": "Baseline"
+  },
+  {
+      "class": "Rogue",
+      "spell": "Garrote",
+      "drSchool": "Silence",
+      "source": "Baseline",
+      "note": "Assassination only, when used from stealth"
+  },
+  {
+      "class": "Rogue",
+      "spell": "Cheap Shot",
+      "drSchool": "Stun",
+      "source": "Baseline"
+  },
+  {
+      "class": "Rogue",
+      "spell": "Kidney Shot",
+      "drSchool": "Stun",
+      "source": "Baseline"
+  },
+  {
+      "class": "Shaman",
+      "spell": "Sundering",
+      "drSchool": "Incapacitate",
+      "source": "Talent",
+      "note": "Enhancement Only"
+  },
+  {
+      "class": "Shaman",
+      "spell": "Thunderstorm",
+      "drSchool": "Knockback",
+      "source": "Baseline",
+      "note": "Elemental Only"
+  },
+  {
+      "class": "Shaman",
+      "spell": "Earthgrab Totem",
+      "spellId": 51485,
+      "drSchool": "Root",
+      "source": "Talent",
+      "note": "Restoration Only"
+  },
+  {
+      "class": "Shaman",
+      "spell": "Frost Shock",
+      "drSchool": "Root",
+      "source": "Talent",
+      "note": "Elemental only; when used with Surge of Power talent (https://www.wowhead.com/spell=262303/surge-of-power)"
+  },
+  {
+      "class": "Shaman",
+      "spell": "Hex",
+      "spellId": 51514,
+      "drSchool": "Stun",
+      "source": "Baseline"
+  },
+  {
+      "class": "Shaman",
+      "spell": "Capacitor Totem",
+      "spellId": 192058,
+      "drSchool": "Stun",
+      "source": "Baseline"
+  },
+  {
+      "class": "Shaman",
+      "spell": "Lightning Lasso",
+      "drSchool": "Stun",
+      "source": "PvP Talent",
+      "note": "Elemental only"
+  },
+  {
+      "class": "Shaman",
+      "spell": "Pulverize",
+      "drSchool": "Stun",
+      "source": "Pet",
+      "note": "Elemental only; used by Primal Earth Elemental"
+  },
+  {
+      "class": "Warlock",
+      "spell": "Fear",
+      "spellId": 5892,
+      "drSchool": "Disorient",
+      "source": "Baseline"
+  },
+  {
+      "class": "Warlock",
+      "spell": "Howl of Terror",
+      "spellId": 5484,
+      "drSchool": "Disorient",
+      "source": "Talent",
+      "note": "AOE Fear"
+  },
+  {
+      "class": "Warlock",
+      "spell": "Seduction",
+      "spellId": 6358,
+      "drSchool": "Disorient",
+      "source": "Pet",
+      "note": "Sayaad Pet (Succubus or Incubus) only"
+  },
+  {
+      "class": "Warlock",
+      "spell": "Mortal Coil",
+      "spellId": 6789,
+      "drSchool": "Incapacitate",
+      "source": "Talent"
+  },
+  {
+      "class": "Warlock",
+      "spell": "Banish",
+      "spellId": 710,
+      "drSchool": "Incapacitate",
+      "source": "Baseline",
+      "note": "Demon, Aberration, or Elemental. Limit 1 at a time."
+  },
+  {
+      "class": "Warlock",
+      "spell": "Shadowfury",
+      "spellId": 30283,
+      "drSchool": "Stun",
+      "source": "Baseline",
+      "note": "AOE Stun. Darkfury Talent increases radius and decreases cooldown"
+  },
+  {
+      "class": "Warlock",
+      "spell": "Axe Toss",
+      "drSchool": "Stun",
+      "source": "Pet",
+      "note": "Demo Only, Felguard or Wrathguard Pet"
+  },
+  {
+      "class": "Warlock",
+      "spell": "Summon Infernal",
+      "drSchool": "Stun",
+      "source": "Infernal Summon",
+      "note": "Doesn't DR with other stuns. Only happens when Infernal is summoned."
+  },
+  {
+      "class": "Warlock",
+      "spell": "Summon Fel Lord",
+      "drSchool": "Stun",
+      "source": "PvP Talent",
+      "note": "Fel Lord stuns nearby targets"
+  },
+  {
+      "class": "Warrior",
+      "spell": "Disarm",
+      "spellId": 236077,
+      "drSchool": "Disarm",
+      "source": "PvP Talent"
+  },
+  {
+      "class": "Warrior",
+      "spell": "Intimidating Shout",
+      "spellId": 5246,
+      "drSchool": "Disorient",
+      "source": "Baseline",
+      "note": "Physical"
+  },
+  {
+      "class": "Warrior",
+      "spell": "Dragon Charge",
+      "spellId": 206572,
+      "drSchool": "Knockback",
+      "source": "PvP Talent",
+      "note": "Protection only"
+  },
+  {
+      "class": "Warrior",
+      "spell": "Charge",
+      "spellId": 100,
+      "drSchool": "Root",
+      "source": "Baseline",
+      "note": "Doesn't actually DR"
+  },
+  {
+      "class": "Warrior",
+      "spell": "Charge",
+      "spellId": 356353,
+      "drSchool": "Root",
+      "source": "PvP Talent",
+      "note": "When used with Warbringer PvP Talent (https://www.wowhead.com/spell=356353/warbringer); AoE root incurs DR"
+  },
+  {
+      "class": "Warrior",
+      "spell": "Thunder Clap",
+      "spellId": 199045,
+      "drSchool": "Root ",
+      "source": "PvP Talent",
+      "note": "Protection only; when used with Thunderstruck PvP Talent (https://www.wowhead.com/spell=199045/thunderstruck)"
+  },
+  {
+      "class": "Warrior",
+      "spell": "Shockwave",
+      "spellId": 46968,
+      "drSchool": "Stun",
+      "source": "Baseline",
+      "note": "Protection only"
+  },
+  {
+      "class": "Warrior",
+      "spell": "Storm Bolt",
+      "spellId": 107570,
+      "drSchool": "Stun",
+      "source": "Talent"
+  },
+  {
+      "class": "Warrior",
+      "spell": "Heroic Leap",
+      "spellId": 199086,
+      "drSchool": "Stun",
+      "source": "PvP Talent",
+      "note": "Protection only; when used with Warpath PvP Talent (https://www.wowhead.com/spell=199085/warpath)"
+  }
+]
