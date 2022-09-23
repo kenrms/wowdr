@@ -1,8 +1,12 @@
-import { useEffect, useState } from 'react';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import { DrGroupByClassComponent } from "./components/drGroupByClassComponent";
+import { Container, Row, Col } from "react-bootstrap";
+import Form from "react-bootstrap/Form";
+
 
 function App() {
   const [state, setState] = useState({});
+  const headerText = "WoW DR";
 
   const keyByClassReducer = (acc, drData) => {
     const key = drData.class;
@@ -13,53 +17,22 @@ function App() {
   };
 
   const fetchJsonDataAndReduce = () => {
-    fetch('./data/wowDiminishingReturns.json', {
-      headers : { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-       }
+    fetch("./data/wowDiminishingReturns.json", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
     })
-      .then(response => response.json())
-      .then(json => {        
+      .then((response) => response.json())
+      .then((json) => {
         let byClassData = json.reduce(keyByClassReducer, {});
 
         let newState = {
-          spellDataByClass : byClassData
+          spellDataByClass: byClassData,
         };
-        
+
         setState(newState);
       });
-  };
-
-  const renderClassDrList = (className, spellList) => {
-    return (
-      <>
-        <h4>{className}</h4>
-        
-        <table>
-          <thead>
-            <tr>
-              <th>Spell</th>
-              <th>DR School</th>
-              <th>Notes</th>
-            </tr>
-          </thead>
-          <tbody>
-          {
-            spellList.map(spellData => {
-              return (     
-                <tr>
-                  <td>{spellData.spell}</td>
-                  <td>{spellData.drSchool}</td>
-                  <td>{spellData.note}</td>
-                </tr>
-              );
-            })
-          }
-          </tbody>
-        </table>
-      </>
-    )
   };
 
   useEffect(() => {
@@ -67,17 +40,41 @@ function App() {
   }, []);
 
   return (
-    <div className="">
-      <h3>DR by Class:</h3>
+    <Container fluid>
+      <Row>
+        <Col>
+          <h3>{headerText}</h3>
+        </Col>
+      </Row>
 
-      { 
-        state.spellDataByClass && Object.entries(state.spellDataByClass).length > 0 &&
-        Object.entries(state.spellDataByClass).map(([className, spellList]) => {
-          return renderClassDrList(className, spellList);
-        })
-      }
+      <Row>
+        <Col className="leftPanel">
+          {/* Search filter */}
+          <Form>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Control
+                type="text"
+                placeholder="i.e. Kidney Shot"
+                disabled
+              />
+            </Form.Group>
+          </Form>
 
-    </div>
+          {state.spellDataByClass &&
+            Object.entries(state.spellDataByClass).length > 0 &&
+            Object.entries(
+              state.spellDataByClass
+            ).map(([className, spellList]) => (
+              <DrGroupByClassComponent
+                wowClass={className}
+                spellList={spellList}
+              />
+            ))}
+        </Col>
+
+        <Col className="rightPanel">{/* TODO */}</Col>
+      </Row>
+    </Container>
   );
 }
 
