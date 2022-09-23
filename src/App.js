@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { DrGroupByClassComponent } from "./components/drGroupByClassComponent";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Accordion } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 
 
@@ -60,16 +60,21 @@ function App() {
             </Form.Group>
           </Form>
 
-          {state.spellDataByClass &&
-            Object.entries(state.spellDataByClass).length > 0 &&
-            Object.entries(
-              state.spellDataByClass
-            ).map(([className, spellList]) => (
-              <DrGroupByClassComponent
-                wowClass={className}
-                spellList={spellList}
-              />
-            ))}
+          <Accordion defaultActiveKey="0">
+            {state.spellDataByClass &&
+              Object.entries(state.spellDataByClass).length > 0 &&
+              Object.entries(state.spellDataByClass).map(
+                ([className, spellList], index) => (
+                  <>
+                    <DrGroupByClassComponent
+                      wowClass={className}
+                      spellList={spellList}
+                      eventKey={index}
+                    />
+                  </>
+                )
+              )}
+          </Accordion>
         </Col>
 
         <Col className="rightPanel">{/* TODO */}</Col>
