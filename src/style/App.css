@@ -1,3 +1,31 @@
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -60px;
+  /* the bottom margin is the negative value of the footer's height */
+}
+
+/* .push must be the same height as .footer */
+footer,
+.push {
+  height: 60px;
+}
+
+footer {
+  display: flex !important;
+  flex-wrap: wrap;
+  padding: 15px 65px;
+  border-top: 1px solid #6d4591;
+  line-height: 25px;
+  background-color: #111016;
+  font-size: 14px;
+  color: #dbdbdb;
+  flex-direction: column;
+  align-items: center;
+  align-content: flex-end;
+}
+
 .appHeader {
   position: sticky;
   display: block;
@@ -6,8 +34,8 @@
   right: 0;
   left: 0;
   height: 60px;
-  border-bottom: 1px solid #1f2527;
-  background-color: #0c0d0e;
+  border-bottom: 1px solid #6d4591;
+  background-color: #111016;
   margin-bottom: 36px;
 }
 
@@ -19,8 +47,8 @@
   transform: translateY(-50%);
 }
 
-.appContent.container {
-  width: 666px;
+.appContent {
+  padding-bottom: 150px;
 }
 
 img.classIcon {

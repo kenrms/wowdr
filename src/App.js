@@ -5,6 +5,7 @@ import { SearchComponent } from "./components/searchComponent";
 import { AppHeaderComponent } from "./components/appHeaderComponent";
 
 import "./style/App.css";
+import { CONSTANTS } from "./constants";
 
 function App() {
   const [state, setState] = useState({});
@@ -41,34 +42,42 @@ function App() {
   }, []);
 
   return (
-    <Container fluid className="App">
-      <AppHeaderComponent />
+    <>
+      <Container fluid className="App">
+        <AppHeaderComponent />
 
-      <Container className="appContent">
-        <Row>
-          <Col className="contentPanel">
-            {/* <SearchComponent isDisabled={true} /> */}
+        <Container fluid className="appContent">
+          <Row className="justify-content-md-center">
+            <Col className="contentPanel" lg={6}>
+              {/* <SearchComponent isDisabled={true} /> */}
 
-            <Accordion defaultActiveKey="0">
-              {state.spellDataByClass &&
-                Object.entries(state.spellDataByClass).length > 0 &&
-                Object.entries(
-                  state.spellDataByClass
-                ).map(([className, spellList], index) => (
-                  <DrGroupByClassComponent
-                    key={className}
-                    wowClass={className}
-                    spellList={spellList}
-                    eventKey={index}
-                  />
-                ))}
-            </Accordion>
-          </Col>
+              <Accordion defaultActiveKey="0">
+                {state.spellDataByClass &&
+                  Object.entries(state.spellDataByClass).length > 0 &&
+                  Object.entries(
+                    state.spellDataByClass
+                  ).map(([className, spellList], index) => (
+                    <DrGroupByClassComponent
+                      key={className}
+                      wowClass={className}
+                      spellList={spellList}
+                      eventKey={index}
+                    />
+                  ))}
+              </Accordion>
+            </Col>
 
-          {/* <Col className="rightPanel">TODO</Col> */}
-        </Row>
+            {/* <Col className="rightPanel">TODO</Col> */}
+          </Row>
+        </Container>
+
+        <div className="push"></div>
       </Container>
-    </Container>
+
+      <footer>
+        <p>{CONSTANTS.APP_NAME} &copy; 2022</p>
+      </footer>
+    </>
   );
 }
 

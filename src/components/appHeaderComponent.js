@@ -7,7 +7,7 @@ import "../style/App.css"
 export function AppHeaderComponent() {
   return (
     <Row className="appHeader">
-      <Col>
+      <Col lg={12}>
         <h3>{CONSTANTS.APP_NAME}</h3>
       </Col>
     </Row>
