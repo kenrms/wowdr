@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { DrGroupByClassComponent } from "./components/drGroupByClassComponent";
 import { Container, Row, Col, Accordion } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
-
+import { SearchComponent } from "./components/searchComponent";
 
 function App() {
   const [state, setState] = useState({});
@@ -40,40 +40,31 @@ function App() {
   }, []);
 
   return (
-    <Container fluid>
-      <Row>
+    <Container fluid class="App">
+      <Row class="appHeader">
         <Col>
           <h3>{headerText}</h3>
         </Col>
       </Row>
 
-      <Row>
+      <Row class="appContent">
         <Col className="leftPanel">
           {/* Search filter */}
-          <Form>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Control
-                type="text"
-                placeholder="i.e. Kidney Shot"
-                disabled
-              />
-            </Form.Group>
-          </Form>
+          <SearchComponent isDisabled={true} />
 
           <Accordion defaultActiveKey="0">
             {state.spellDataByClass &&
               Object.entries(state.spellDataByClass).length > 0 &&
-              Object.entries(state.spellDataByClass).map(
-                ([className, spellList], index) => (
-                  <>
-                    <DrGroupByClassComponent
-                      wowClass={className}
-                      spellList={spellList}
-                      eventKey={index}
-                    />
-                  </>
-                )
-              )}
+              Object.entries(
+                state.spellDataByClass
+              ).map(([className, spellList], index) => (
+                <DrGroupByClassComponent
+                  key={className}
+                  wowClass={className}
+                  spellList={spellList}
+                  eventKey={index}
+                />
+              ))}
           </Accordion>
         </Col>
 

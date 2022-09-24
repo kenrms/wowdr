@@ -2,6 +2,7 @@ import React from "react";
 import { ListGroup, Accordion } from "react-bootstrap";
 import { DrSpellDataComponent } from "./drSpellDataComponent";
 
+
 export function DrGroupByClassComponent(props) {
   const className = props.wowClass;
   const spellList = props.spellList;
@@ -13,7 +14,10 @@ export function DrGroupByClassComponent(props) {
       <Accordion.Body>
         <ListGroup>
           {spellList.map((spellData) => (
-            <DrSpellDataComponent spellData={spellData} />
+            <DrSpellDataComponent
+              key={`${eventKey}-${className}-${spellData.spell}-${spellData.drSchool}-${spellData.spellId}`}
+              spellData={spellData}
+            />
           ))}
         </ListGroup>
       </Accordion.Body>

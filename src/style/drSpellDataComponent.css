@@ -1,0 +1,14 @@
+.dataLabel {
+  float: right;
+  border-radius: 8px;
+  padding: 2px 8px;
+  margin-left: 4px;
+}
+
+.dataLabel.school {
+  background: #444444;
+}
+
+.dataLabel.source {
+  background: #9fa54b;
+}
