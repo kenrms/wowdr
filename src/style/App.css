@@ -1,0 +1,11 @@
+.appHeader {
+  position: sticky;
+  display: block;
+  z-index: 20;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 60px;
+  border-bottom: 1px solid #1f2527;
+  background-color: #0c0d0e;
+}

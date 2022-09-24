@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { DrGroupByClassComponent } from "./components/drGroupByClassComponent";
 import { Container, Row, Col, Accordion } from "react-bootstrap";
-import Form from "react-bootstrap/Form";
 import { SearchComponent } from "./components/searchComponent";
+import { AppHeaderComponent } from "./components/appHeaderComponent";
+
+import "./style/App.css";
 
 function App() {
   const [state, setState] = useState({});
-  const headerText = "WoW DR";
 
   const keyByClassReducer = (acc, drData) => {
     const key = drData.class;
@@ -40,17 +41,12 @@ function App() {
   }, []);
 
   return (
-    <Container fluid class="App">
-      <Row class="appHeader">
-        <Col>
-          <h3>{headerText}</h3>
-        </Col>
-      </Row>
+    <Container fluid className="App">
+      <AppHeaderComponent />
 
-      <Row class="appContent">
+      <Row className="appContent">
         <Col className="leftPanel">
-          {/* Search filter */}
-          <SearchComponent isDisabled={true} />
+          {/* <SearchComponent isDisabled={true} /> */}
 
           <Accordion defaultActiveKey="0">
             {state.spellDataByClass &&
