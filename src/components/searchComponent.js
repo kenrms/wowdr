@@ -1,6 +1,6 @@
 import React from "react";
 import { Form } from "react-bootstrap";
-import CONSTANTS from "../constants";
+import { CONSTANTS } from "../constants";
 
 export function SearchComponent(props) {
   const isDisabled = props.isDisabled;

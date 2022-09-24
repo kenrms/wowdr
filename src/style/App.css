@@ -8,4 +8,25 @@
   height: 60px;
   border-bottom: 1px solid #1f2527;
   background-color: #0c0d0e;
+  margin-bottom: 36px;
+}
+
+.appHeader h3 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.appContent.container {
+  width: 666px;
+}
+
+img.classIcon {
+  height: 24px;
+  margin-right: 8px;
+  padding-left: 8px;
+  background-color: magenta;
+  border: 1px solid darkgrey;
 }
