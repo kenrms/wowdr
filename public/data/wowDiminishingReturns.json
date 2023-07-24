@@ -55,7 +55,7 @@
     {
         "class": "Death Knight",
         "spell": "Frostwyrm's Fury",
-        "spellId": 370965,
+        "spellId": 377047,
         "drSchool": "Stun",
         "source": "Talent",
         "note": "with talent Absolute Zero"
