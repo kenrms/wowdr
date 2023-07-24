@@ -1,5 +1,6 @@
 const CONSTANTS = {
-  APP_NAME: "WoWDR Pre-alpha",
+  APP_NAME: "WoWDR",
+  APP_VERSION: "Alpha",
   SEARCH_PLACEHOLDER: "i.e. Kidney Shot",
   CLASS_COLORS: {
     "Death Knight": "#C41E3A",

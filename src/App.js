@@ -9,6 +9,7 @@ import { CONSTANTS } from "./constants";
 
 function App() {
   const [state, setState] = useState({});
+  let isShowRightPanel = false;
 
   const keyByClassReducer = (acc, drData) => {
     const key = drData.class;
@@ -18,6 +19,7 @@ function App() {
     return acc;
   };
 
+  // TODO move to a service
   const fetchJsonDataAndReduce = () => {
     fetch("./data/wowDiminishingReturns.json", {
       headers: {
@@ -54,20 +56,36 @@ function App() {
               <Accordion defaultActiveKey="0">
                 {state.spellDataByClass &&
                   Object.entries(state.spellDataByClass).length > 0 &&
-                  Object.entries(
-                    state.spellDataByClass
-                  ).map(([className, spellList], index) => (
-                    <DrGroupByClassComponent
-                      key={className}
-                      wowClass={className}
-                      spellList={spellList}
-                      eventKey={index}
-                    />
-                  ))}
+                  Object.entries(state.spellDataByClass).map(
+                    ([className, spellList], index) => (
+                      <DrGroupByClassComponent
+                        key={className}
+                        wowClass={className}
+                        spellList={spellList}
+                        eventKey={index}
+                      />
+                    )
+                  )}
               </Accordion>
             </Col>
 
-            {/* <Col className="rightPanel">TODO</Col> */}
+            {/* <Col className="rightPanel" hidden={isShowRightPanel}>
+              <Row>
+                <button onClick={closeInfoPanel} value="Close" />
+              </Row>
+              <Row>
+                <p>{spell} is a:</p>
+                <h3 className="infoDrSchoolLabel">{drSchool}</h3>
+              </Row>
+              <Row>
+                <p>Here are some more {drSchool}s:</p>
+                <ul>
+                  {allMatchingDrs.map((spellData) => (
+                    <li>{spellData.spell}</li>
+                  ))}
+                </ul>
+              </Row>
+            </Col> */}
           </Row>
         </Container>
 
@@ -75,7 +93,7 @@ function App() {
       </Container>
 
       <footer>
-        <p>{CONSTANTS.APP_NAME} &copy; 2022</p>
+        <p>{CONSTANTS.APP_NAME} &copy; 2023</p>
       </footer>
     </>
   );

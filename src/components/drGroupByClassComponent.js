@@ -21,7 +21,7 @@ export function DrGroupByClassComponent(props) {
         {className}
       </Accordion.Header>
       <Accordion.Body>
-        <ListGroup>
+        <ListGroup variant="flush">
           {spellList.map((spellData) => (
             <DrSpellDataComponent
               key={`${eventKey}-${className}-${spellData.spell}-${spellData.drSchool}-${spellData.spellId}`}
