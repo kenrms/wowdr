@@ -483,7 +483,7 @@
         "spell": "Paralysis",
         "spellId": 115078,
         "drSchool": "Incapacitate",
-        "source": "Baseline"
+        "source": "Talent"
     },
     {
         "class": "Monk",
@@ -540,7 +540,7 @@
     {
         "class": "Paladin",
         "spell": "Turn Evil",
-        "spellId": 145067,
+        "spellId": 10326,
         "drSchool": "Disorient",
         "source": "Baseline",
         "note": "Only works on demon, undead, and aberration"
@@ -707,7 +707,7 @@
     {
         "class": "Shaman",
         "spell": "Thunderstorm",
-        "spellId": 79797,
+        "spellId": 51490,
         "drSchool": "Knockback",
         "source": "Baseline"
     },
@@ -743,7 +743,7 @@
     {
         "class": "Shaman",
         "spell": "Lightning Lasso",
-        "spellId": 204437,
+        "spellId": 305483,
         "drSchool": "Stun",
         "source": "Talent"
     },
@@ -758,7 +758,7 @@
     {
         "class": "Warlock",
         "spell": "Fear",
-        "spellId": 5892,
+        "spellId": 5782,
         "drSchool": "Disorient",
         "source": "Baseline"
     },
@@ -783,7 +783,7 @@
         "spell": "Banish",
         "spellId": 710,
         "drSchool": "Incapacitate",
-        "source": "Baseline",
+        "source": "Talent",
         "note": "Demon, Aberration, or Elemental. Limit 1 at a time."
     },
     {
@@ -799,7 +799,7 @@
         "spellId": 89766,
         "drSchool": "Stun",
         "source": "Pet",
-        "note": "Demo Only, Felguard or Wrathguard Pet"
+        "note": "Demonology only, Felguard or Wrathguard Pet"
     },
     {
         "class": "Warlock",
@@ -814,7 +814,7 @@
         "spell": "Shadowfury",
         "spellId": 30283,
         "drSchool": "Stun",
-        "source": "Baseline",
+        "source": "Talent",
         "note": "AOE Stun. Darkfury Talent increases radius and decreases cooldown"
     },
     {
@@ -824,6 +824,22 @@
         "drSchool": "Stun",
         "source": "Infernal Summon",
         "note": "Doesn't DR with other stuns. Only happens when Infernal is summoned."
+    },
+    {
+        "class": "Warlock",
+        "spell": "Grimoire: Felguard",
+        "spellId": 111898,
+        "drSchool": "Stun",
+        "source": "Talent",
+        "note": "Demonology only"
+    },
+    {
+        "class": "Warlock",
+        "spell": "Avatar of Destruction",
+        "spellId": 387159,
+        "drSchool": "Stun",
+        "source": "Talent",
+        "note": "Destruction only"
     },
     {
         "class": "Warrior",
@@ -901,5 +917,33 @@
         "drSchool": "Stun",
         "source": "PvP Talent",
         "note": "Protection only"
+    },
+    {
+        "class": "Kul Tiran",
+        "spell": "Haymaker",
+        "spellId": 287712,
+        "drSchool": "Stun",
+        "source": "Racial"
+    },
+    {
+        "class": "Tauren",
+        "spell": "War Stomp",
+        "spellId": 20549,
+        "drSchool": "Stun",
+        "source": "Racial"
+    },
+    {
+        "class": "Pandaren",
+        "spell": "Quaking Palm",
+        "spellId": 107079,
+        "drSchool": "Incapacitate",
+        "source": "Racial"
+    },
+    {
+        "class": "Highmountain Tauren",
+        "spell": "Bull Rush",
+        "spellId": 255654,
+        "drSchool": "Stun",
+        "source": "Racial"
     }
 ]
