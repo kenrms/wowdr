@@ -62,3 +62,9 @@ img.classIcon {
   background-color: magenta;
   border: 1px solid darkgrey;
 }
+
+.kofiBtn {
+  margin: 0 auto;
+  display: block;
+  width: 145px;
+}

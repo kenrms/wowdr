@@ -3,6 +3,7 @@ import { DrGroupByClassComponent } from "./components/drGroupByClassComponent";
 import { Container, Row, Col, Accordion } from "react-bootstrap";
 import { SearchComponent } from "./components/searchComponent";
 import { AppHeaderComponent } from "./components/appHeaderComponent";
+import { KoFiButton } from "./components/kofiButton";
 
 import "./style/App.css";
 import { CONSTANTS } from "./constants";
@@ -90,6 +91,12 @@ function App() {
         </Container>
 
         <div className="push"></div>
+
+        
+        <KoFiButton></KoFiButton>
+      </Container>
+
+      <Container>
       </Container>
 
       <footer>
