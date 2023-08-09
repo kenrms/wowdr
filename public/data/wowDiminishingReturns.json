@@ -375,6 +375,14 @@
         "note": "Knocks back"
     },
     {
+        "class": "Evoker",
+        "spell": "Landslide",
+        "spellId": 408543,
+        "drSchool": "Stun",
+        "source": "Talent",
+        "note": "Augmentation only"
+    },
+    {
         "class": "Mage",
         "spell": "Dragon's Breath",
         "spellId": 31661,
