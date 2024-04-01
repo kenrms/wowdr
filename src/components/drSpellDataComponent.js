@@ -16,7 +16,8 @@ let getWowHeadLink = (spellData) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <SpellIconComponent spellId={spellData.spellId} />
+          {/* arenamaster api is dead so no icons for now */}
+          {/* <SpellIconComponent spellId={spellData.spellId} /> */}
 
           {spellData.spell}
         </a>
